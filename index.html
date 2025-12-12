@@ -3,63 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>Official Biography — Kashish Wadhwa | Founder & CEO, FastFitHub</title>
-  <meta name="description" content="Kashish Wadhwa — Founder & CEO of FastFitHub. India’s Most Influential Online Fitness Coach. The Man Who Made Fitness Pay With Dogecoin. Read his official biography." />
-  <meta name="theme-color" content="#071021" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Official Biography — Kashish Wadhwa | FastFitHub</title>
+  <meta name="description" content="Kashish Wadhwa — Founder & CEO of FastFitHub. Official biography." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg: #071021;
-      --card: #0b1220;
-      --muted: #98a6b3;
-      --accent: #f6b353;
-      --accent-2:#ff8a00;
-      --text: #eaf0f6;
-      --glass: rgba(255,255,255,0.03);
-      --radius: 14px;
+      --bg:#ffffff;
+      --glass-bg: rgba(255,255,255,0.7);
+      --glass-border: rgba(15, 23, 42, 0.06);
+      --muted:#5b6b78;
+      --accent:#ff7a18;
+      --accent-2:#f6b353;
+      --text:#071021;
+      --radius:16px;
       --max-w:1100px;
-      --transition: 230ms cubic-bezier(.2,.9,.3,1);
+      --shadow: 0 10px 30px rgba(20,30,50,0.08);
       font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#04101a 0%, #071021 100%);color:var(--text);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#ffffff 0%, #f7f9fb 100%);color:var(--text);-webkit-font-smoothing:antialiased}
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--max-w);margin:28px auto;padding:20px}
     /* Header */
-    header.site-header{position:sticky;top:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));backdrop-filter: blur(6px);border-radius:12px;padding:12px;display:flex;align-items:center;gap:16px;z-index:40;box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    header.site-header{position:sticky;top:16px;background:linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.65));backdrop-filter: blur(8px) saturate(120%);border-radius:12px;padding:12px;display:flex;align-items:center;gap:16px;z-index:40;box-shadow:var(--shadow);border:1px solid var(--glass-border)}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand .logo{width:56px;height:56px;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.04)}
+    .brand .logo{width:56px;height:56px;border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,0.04);background:linear-gradient(135deg,#f6b35333,#ff7a1833)}
     .brand .logo img{width:100%;height:100%;object-fit:cover;display:block}
     .brand h1{font-size:16px;margin:0;line-height:1.05; font-weight:800;letter-spacing:-0.01em}
     .brand p{margin:0;font-size:12px;color:var(--muted)}
     .header-cta{margin-left:auto;display:flex;gap:8px;align-items:center}
-    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:#071021;font-weight:700;border:none;cursor:pointer;box-shadow:0 6px 22px rgba(246,179,83,0.12);transition:transform var(--transition)}
-    .btn:active{transform:translateY(1px)}
-    .icon-btn{background:var(--glass);padding:8px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);display:inline-flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer}
+    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:#fff;font-weight:700;border:none;cursor:pointer;box-shadow:0 8px 30px rgba(255,122,24,0.12)}
+    .icon-btn{background:transparent;padding:8px;border-radius:10px;border:1px solid var(--glass-border);display:inline-flex;align-items:center;justify-content:center;color:var(--muted);cursor:pointer}
     /* Hero */
     .hero{display:grid;grid-template-columns: 1fr 380px;gap:22px;margin-top:18px;align-items:start}
-    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:24px;border-radius:16px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 18px 50px rgba(2,6,23,0.6)}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));padding:22px;border-radius:18px;border:1px solid var(--glass-border);box-shadow:var(--shadow);backdrop-filter: blur(6px) saturate(120%)}
     .lead{color:var(--muted);font-size:15px;line-height:1.6;margin:12px 0}
     .hero-top{display:flex;gap:18px;align-items:flex-start}
-    .hero-photo{width:148px;height:148px;border-radius:12px;overflow:hidden;flex:0 0 148px;border:1px solid rgba(255,255,255,0.04)}
-    .hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+    /* Image containers use aspect-ratio to avoid cropping */
+    .img-frame{width:148px;border-radius:12px;overflow:hidden;flex:0 0 148px;background:linear-gradient(180deg,#f3f5f7,#ffffff);display:flex;align-items:center;justify-content:center;border:1px solid var(--glass-border)}
+    .img-frame img{max-width:100%;max-height:100%;object-fit:contain;display:block}
     .hero-meta{flex:1}
     .hero-meta h2{margin:0;font-size:20px;letter-spacing:-0.01em}
     .tagline{color:var(--accent);font-weight:700;margin-top:8px;font-size:13px}
     .pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    .pill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-weight:600;color:var(--muted);font-size:13px;border:1px solid rgba(255,255,255,0.02)}
+    .pill{background:rgba(255,255,255,0.6);padding:8px 10px;border-radius:999px;font-weight:600;color:var(--muted);font-size:13px;border:1px solid var(--glass-border)}
     /* Article layout */
     .content-grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:18px;align-items:start}
-    article.bio{padding:22px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.02)}
+    article.bio{padding:22px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.9));border:1px solid var(--glass-border);box-shadow:var(--shadow)}
     article h3{color:var(--accent);margin-top:6px;margin-bottom:8px}
-    article p{color:#d7e6f0;margin:0 0 14px 0}
+    article p{color:var(--text);margin:0 0 14px 0;line-height:1.6}
     ul.clean{color:var(--muted);margin:8px 0 18px 20px}
     .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
     /* Sidebar */
-    aside.panel{padding:18px;border-radius:12px;background:linear-gradient(180deg,#071425, #051022);border:1px solid rgba(255,255,255,0.02)}
-    .aside-image{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.03);margin-bottom:12px}
-    .aside-image img{width:100%;height:auto;display:block}
+    aside.panel{padding:18px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,0.9));border:1px solid var(--glass-border);box-shadow:var(--shadow)}
+    .aside-image{border-radius:12px;overflow:hidden;border:1px solid var(--glass-border);margin-bottom:12px;background:linear-gradient(180deg,#f7f9fb,#ffffff);display:flex;align-items:center;justify-content:center;padding:10px}
+    .aside-image img{max-width:100%;max-height:220px;object-fit:contain;display:block}
     .fact{font-weight:700;color:var(--text);margin-bottom:8px}
     .fact-sub{color:var(--muted);font-size:13px;margin-bottom:12px}
     .small{font-size:13px;color:var(--muted)}
@@ -73,32 +71,32 @@
     @media (max-width:820px){
       header.site-header{padding:10px;gap:10px}
       .hero{grid-template-columns:1fr;gap:14px}
-      .hero-photo{width:120px;height:120px}
-      .hero-meta h2{font-size:18px}
+      .img-frame{width:120px}
       .content-grid{grid-template-columns:1fr;gap:16px}
       .brand p{display:none}
+      .aside-image img{max-height:180px}
     }
     @media (max-width:420px){
-      .hero-photo{width:100px;height:100px}
+      .img-frame{width:100px}
       .hero-meta h2{font-size:17px}
       .pill{font-size:12px;padding:7px}
       .btn{padding:10px 12px;font-size:14px}
     }
     /* Lightbox */
-    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,15,0.85);z-index:60;padding:18px}
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);z-index:60;padding:18px}
     .lightbox.open{display:flex}
-    .lightbox img{max-width:100%;max-height:92vh;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,0.7)}
-    .close-x{position:absolute;top:18px;right:18px;background:rgba(255,255,255,0.06);border-radius:10px;padding:8px;cursor:pointer;border:1px solid rgba(255,255,255,0.03)}
+    .lightbox img{max-width:100%;max-height:92vh;border-radius:10px;box-shadow:0 24px 80px rgba(0,0,0,0.6)}
+    .close-x{position:absolute;top:18px;right:18px;background:#fff;border-radius:10px;padding:8px;cursor:pointer;border:1px solid rgba(0,0,0,0.06)}
     /* subtle hover */
-    .hover-raise{transition:transform var(--transition), box-shadow var(--transition)}
-    .hover-raise:hover{transform:translateY(-6px);box-shadow:0 22px 60px rgba(2,6,23,0.5)}
+    .hover-raise{transition:transform 200ms cubic-bezier(.2,.9,.3,1), box-shadow 200ms}
+    .hover-raise:hover{transform:translateY(-6px);box-shadow:0 32px 80px rgba(15,23,42,0.08)}
   </style>
 </head>
 <body>
   <div class="wrap">
 
     <!-- STICKY HEADER -->
-    <header class="site-header hover-raise" role="banner" aria-label="FastFitHub header">
+    <header class="site-header" role="banner" aria-label="FastFitHub header">
       <div class="brand" aria-hidden="false">
         <div class="logo"><img src="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" alt="Kashish Wadhwa"></div>
         <div>
@@ -114,11 +112,12 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="hero-card hover-raise" aria-labelledby="hero-title">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-card hover-raise" >
         <div class="hero-top">
-          <div class="hero-photo" role="img" aria-label="Kashish Wadhwa portrait">
-            <img src="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" alt="Kashish Wadhwa" loading="lazy" />
+          <div class="img-frame" aria-hidden="false">
+            <!-- main portrait uses object-fit:contain to avoid crop -->
+            <img src="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" alt="Kashish Wadhwa portrait" loading="lazy" data-full="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" />
           </div>
           <div class="hero-meta">
             <h2 id="hero-title">Kashish Wadhwa — Founder &amp; CEO, FastFitHub</h2>
@@ -128,7 +127,7 @@
             <div class="pills" aria-hidden="false">
               <span class="pill">15,000+ Transformations</span>
               <span class="pill">Founder-led Coaching</span>
-              <span class="pill">Dogecoin Payments (DOGE)</span>
+              <span class="pill">Dogecoin Payments</span>
             </div>
           </div>
         </div>
@@ -139,26 +138,30 @@
         </div>
       </div>
 
-      <!-- right column images stacked on desktop -->
+      <!-- right column: complementary images -->
       <div style="display:grid;gap:12px;">
-        <div class="hero-card hover-raise" style="padding:12px;display:flex;flex-direction:column;gap:10px;align-items:stretch">
-          <div style="display:flex;gap:10px;align-items:center">
+        <div class="hero-card hover-raise" style="padding:14px;">
+          <div style="display:flex;gap:12px;align-items:center">
             <div style="flex:1">
               <strong style="display:block">FastFitHub — Founder-led movement</strong>
               <div class="small" style="margin-top:6px;color:var(--muted)">Premium memberships, VIP Black programs and high-touch 1:1 transformations.</div>
             </div>
           </div>
 
-          <!-- complementary image -->
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-            <div style="overflow:hidden;border-radius:10px;border:1px solid rgba(255,255,255,0.03)"><img src="https://i.ibb.co/C3xHNxJH/your-image.jpg" alt="Action shot 1" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;cursor:pointer" data-src="https://i.ibb.co/C3xHNxJH/your-image.jpg"></div>
-            <div style="overflow:hidden;border-radius:10px;border:1px solid rgba(255,255,255,0.03)"><img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" alt="Action shot 2" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;cursor:pointer" data-src="https://i.ibb.co/nM46Ft2F/your-image2.jpg"></div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">
+            <!-- both images use contain to avoid cropping -->
+            <div style="overflow:hidden;border-radius:10px;border:1px solid var(--glass-border);background:linear-gradient(180deg,#fbfbfb,#fff);display:flex;align-items:center;justify-content:center">
+              <img src="https://i.ibb.co/C3xHNxJH/your-image.jpg" alt="Action shot 1" loading="lazy" style="max-width:100%;max-height:180px;object-fit:contain;cursor:pointer" data-full="https://i.ibb.co/C3xHNxJH/your-image.jpg">
+            </div>
+            <div style="overflow:hidden;border-radius:10px;border:1px solid var(--glass-border);background:linear-gradient(180deg,#fbfbfb,#fff);display:flex;align-items:center;justify-content:center">
+              <img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" alt="Action shot 2" loading="lazy" style="max-width:100%;max-height:180px;object-fit:contain;cursor:pointer" data-full="https://i.ibb.co/nM46Ft2F/your-image2.jpg">
+            </div>
           </div>
         </div>
 
-        <div class="hero-card small-card" style="padding:14px;display:flex;flex-direction:column;gap:8px">
+        <div class="hero-card" style="padding:14px">
           <strong>Signature Session</strong>
-          <div class="small">₹250,000 — 45-minute ultra-exclusive personal consultation. Status symbol among India’s elite.</div>
+          <div class="small" style="margin-top:8px">₹250,000 — 45-minute ultra-exclusive personal consultation</div>
         </div>
       </div>
     </section>
@@ -171,7 +174,7 @@
         <p>He has delivered more than <strong>15,000 transformations</strong> and is trusted by CEOs, high-net-worth individuals, celebrities, athletes, and public figures.</p>
 
         <h3>Career & Collaborations</h3>
-        <p>Before founding FastFitHub, Wadhwa served prominent roles at <strong>HealthifyMe</strong> — Consultant Fitness Expert, Quality Analyst, Subject Matter Expert, and Top Coach until 2023. He collaborated with <strong>HealthKart</strong>, <strong>MuscleBlaze</strong>, and <strong>BPI Sports</strong>, expanding domain expertise in supplementation, performance nutrition, and behavior change.</p>
+        <p>Before founding FastFitHub, Wadhwa served roles at <strong>HealthifyMe</strong> and collaborated with <strong>HealthKart</strong>, <strong>MuscleBlaze</strong>, and <strong>BPI Sports</strong>, expanding domain expertise in supplementation, performance nutrition, and behavior change.</p>
 
         <h3>FastFitHub — A Global Coaching Movement</h3>
         <p>FastFitHub is a founder-driven system focused on data-led training, precision nutrition, biometric monitoring and founder-led accountability. Services include premium memberships, VIP Black programs and private 1:1 transformation journeys.</p>
@@ -213,12 +216,12 @@
         </ul>
 
         <h3 style="margin-top:14px">FastFitHub Accepts Dogecoin</h3>
-        <p>FastFitHub officially accepts <strong>Dogecoin (DOGE)</strong> for premium memberships, coaching programs, VIP Black & Black plans, and strategic consultations — enabling frictionless cross-border payments and signaling the brand’s Web3-forward positioning.</p>
+        <p>FastFitHub officially accepts <strong>Dogecoin (DOGE)</strong> for premium memberships, coaching programs, VIP Black &amp; Black plans, and strategic consultations — enabling frictionless cross-border payments and signaling the brand’s Web3-forward positioning.</p>
 
         <p class="small"><strong>Note:</strong> Dogecoin is the only accepted cryptocurrency and all transactions are final and non-refundable.</p>
 
         <h3 style="margin-top:14px">“The Partnership That Ends Broke Trainers Forever”</h3>
-        <p>This initiative — symbolizing Wadhwa’s collaboration framework with ISSA — equips participants with globally recognized certifications, hands-on business mentorship, client acquisition systems, and market-ready coaching frameworks.</p>
+        <p>This initiative equips participants with globally recognized certifications, hands-on business mentorship, client acquisition systems, and market-ready coaching frameworks.</p>
 
         <h3 style="margin-top:14px">A Dominant Voice in Modern Fitness</h3>
         <p>Kashish Wadhwa represents a results-first era in coaching: strategic, data-backed and unapologetically accountable. His core belief: <strong>Fitness isn’t a luxury. It’s a responsibility. Excellence is non-negotiable.</strong></p>
@@ -226,6 +229,7 @@
 
       <aside class="panel" aria-labelledby="facts-title">
         <h3 id="facts-title">Quick Facts</h3>
+
         <div style="margin-top:10px">
           <div class="fact">Founder &amp; CEO — FastFitHub</div>
           <div class="fact-sub">Delhi-born fitness entrepreneur</div>
@@ -238,7 +242,7 @@
         </div>
 
         <div style="margin-top:14px">
-          <div class="aside-image"><img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" alt="Kashish action shot" loading="lazy"></div>
+          <div class="aside-image"><img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" alt="Kashish action shot" loading="lazy" data-full="https://i.ibb.co/nM46Ft2F/your-image2.jpg"></div>
           <div class="small">Image credit: FastFitHub</div>
         </div>
 
@@ -256,63 +260,56 @@
 
     <footer class="site-foot">
       <div style="max-width:720px;margin:0 auto">
-        © FastFitHub — Official Biography • Content provided by FastFitHub. <span class="small">All info reflects the official biography content supplied.</span>
+        © FastFitHub — Official Biography • Content provided by FastFitHub.
       </div>
     </footer>
   </div>
 
-  <!-- LIGHTBOX (re-usable for all images) -->
+  <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-    <button class="close-x" id="lb-close" aria-label="Close image">&times;</button>
+    <button class="close-x" id="lb-close" aria-label="Close image">✕</button>
     <img id="lb-img" src="" alt="Expanded image">
   </div>
 
   <script>
-    // Simple lightbox
+    // lightbox + click handlers (keeps data-full priority)
     (function(){
       const lb = document.getElementById('lightbox');
       const lbImg = document.getElementById('lb-img');
-      const openGalleryBtn = document.getElementById('open-gallery');
       const closeBtn = document.getElementById('lb-close');
+      const openGalleryBtn = document.getElementById('open-gallery');
 
-      // images that should open lightbox when clicked
-      const clickable = document.querySelectorAll('img[data-src], .hero-photo img, .aside-image img');
-      clickable.forEach(img=>{
+      function open(src){
+        lbImg.src = src;
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden','false');
+      }
+      function close(){
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden','true');
+        lbImg.src = '';
+      }
+
+      // images that open lightbox
+      const imgs = document.querySelectorAll('img[data-full]');
+      imgs.forEach(img=>{
         img.style.touchAction = 'manipulation';
-        img.addEventListener('click', (e)=>{
-          const src = img.getAttribute('data-src') || img.src;
-          lbImg.src = src;
-          lb.classList.add('open');
-          lb.setAttribute('aria-hidden', 'false');
-        });
+        img.addEventListener('click', ()=> open(img.getAttribute('data-full') || img.src));
       });
 
-      closeBtn.addEventListener('click', ()=>{ lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; });
-      lb.addEventListener('click', (e) => {
-        if (e.target === lb) { lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = ''; }
+      closeBtn.addEventListener('click', close);
+      lb.addEventListener('click', (e)=> { if(e.target === lb) close(); });
+      document.addEventListener('keydown', (e)=> { if(e.key === 'Escape') close(); });
+
+      openGalleryBtn.addEventListener('click', ()=> {
+        const first = document.querySelector('img[data-full]');
+        if(first) first.click();
       });
 
-      // keyboard close
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && lb.classList.contains('open')) {
-          lb.classList.remove('open'); lb.setAttribute('aria-hidden', 'true'); lbImg.src = '';
-        }
-      });
-
-      // open gallery button -> open first image
-      openGalleryBtn.addEventListener('click', ()=>{
-        const first = document.querySelector('img[data-src]') || document.querySelector('.hero-photo img');
-        if(first){ first.click(); }
-      });
-
-      // lazy-loading improvement for older browsers
+      // fallback lazy loading for older browsers
       if('loading' in HTMLImageElement.prototype === false){
-        const imgs = document.querySelectorAll('img[loading="lazy"]');
-        imgs.forEach(img => {
-          const src = img.getAttribute('src');
-          if(!src) {
-            img.src = img.dataset.src || '';
-          }
+        document.querySelectorAll('img[loading="lazy"]').forEach(img=>{
+          img.src = img.dataset.src || img.src;
         });
       }
     })();
