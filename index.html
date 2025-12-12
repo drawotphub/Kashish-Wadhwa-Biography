@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="google-site-verification" content="KhQnbRl5XtNDJwIfFSmhEEL22q7bRSqpPZjAZ4LflCg" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <title>Official Biography — Kashish Wadhwa | Founder & CEO, FastFitHub</title>
   <meta name="description" content="Kashish Wadhwa — Founder & CEO of FastFitHub. India’s Most Influential Online Fitness Coach. The man who made fitness pay with Dogecoin." />
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
   <style>
     :root{
       --bg:#f7f9fb;
@@ -20,86 +23,204 @@
       --shadow: 0 12px 40px rgba(18,24,34,0.06);
       font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
+
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:linear-gradient(180deg,#ffffff 0%, #f0f4f7 100%);color:var(--text);-webkit-font-smoothing:antialiased}
-    a{color:inherit}
+    html,body{
+      height:100%;
+      margin:0;
+      background:linear-gradient(180deg,#ffffff 0%, #f0f4f7 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    a{color:inherit;text-decoration:none;}
     .wrap{max-width:var(--max-w);margin:28px auto;padding:22px}
-    /* header */
-    header{display:flex;gap:16px;align-items:center;padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));border:1px solid var(--glass-border);box-shadow:var(--shadow)}
-    .logo{width:68px;height:68px;border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,0,0.04);flex:0 0 68px;background:linear-gradient(135deg,#fff7ed,#fff1e0)}
+
+    /* HEADER */
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      padding:14px;
+      border-radius:12px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+      border:1px solid var(--glass-border);
+      box-shadow:var(--shadow);
+    }
+
+    .logo{
+      width:68px;
+      height:68px;
+      border-radius:12px;
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,0.04);
+      flex:0 0 68px;
+      background:linear-gradient(135deg,#fff7ed,#fff1e0);
+    }
     .logo img{width:100%;height:100%;object-fit:cover;display:block}
+
     .hdr-titles{flex:1}
-    .hdr-titles h1{margin:0;font-size:18px;letter-spacing:-0.01em;font-weight:800}
-    .hdr-titles p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
-    .cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:white;font-weight:700;text-decoration:none;box-shadow:0 8px 28px rgba(246,179,83,0.12)}
-    /* layout */
-    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:20px;align-items:start}
-    .card{background:var(--card);padding:22px;border-radius:18px;backdrop-filter: blur(6px) saturate(110%);border:1px solid var(--glass-border);box-shadow:var(--shadow)}
+    .hdr-titles h1{margin:0;font-size:18px;font-weight:800;letter-spacing:-0.01em}
+    .hdr-titles p{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+    .cta{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      padding:10px 14px;
+      border-radius:10px;
+      color:white;
+      font-weight:700;
+      box-shadow:0 8px 28px rgba(246,179,83,0.12);
+    }
+
+    /* HERO */
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 360px;
+      gap:24px;
+      margin-top:20px;
+      align-items:start;
+    }
+
+    .card{
+      background:var(--card);
+      padding:22px;
+      border-radius:18px;
+      border:1px solid var(--glass-border);
+      box-shadow:var(--shadow);
+      backdrop-filter: blur(6px) saturate(110%);
+    }
+
     .hero-left h2{margin:0;font-size:22px}
     .sub{color:var(--muted);margin-top:8px;line-height:1.6}
-    /* image frame uses contain to avoid crop */
-    .portrait{width:100%;height:320px;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#fbfbfb,#fff);display:flex;align-items:center;justify-content:center;border:1px solid var(--glass-border)}
-    .portrait img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+
+    .portrait{
+      width:100%;
+      height:320px;
+      border-radius:12px;
+      overflow:hidden;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border:1px solid var(--glass-border);
+    }
+
+    .portrait img{
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
+      display:block;
+      cursor:zoom-in;
+    }
+
     .meta-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-    .chip{background:rgba(255,255,255,0.7);padding:8px 12px;border-radius:999px;border:1px solid var(--glass-border);color:var(--muted);font-weight:600;font-size:13px}
-    /* main content */
-    .content{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px;align-items:start}
-    article{padding:22px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.92));border:1px solid var(--glass-border);box-shadow:var(--shadow)}
+    .chip{
+      background:rgba(255,255,255,0.75);
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--glass-border);
+      font-weight:600;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* MAIN CONTENT */
+    .content{
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:24px;
+      margin-top:22px;
+    }
+
+    article{
+      padding:22px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.96);
+      border:1px solid var(--glass-border);
+      box-shadow:var(--shadow);
+    }
+
     article h3{color:var(--accent);margin-top:6px}
-    article p{color:var(--text);line-height:1.6;margin:0 0 14px 0}
+    article p{margin:0 0 14px;line-height:1.6;color:var(--text)}
     ul.clean{color:var(--muted);margin:8px 0 18px 22px}
+
     .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    /* sidebar */
-    aside{padding:18px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.92));border:1px solid var(--glass-border);box-shadow:var(--shadow)}
-    .aside-img{border-radius:12px;overflow:hidden;background:#fff;padding:10px;border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center}
-    .aside-img img{max-width:100%;max-height:220px;object-fit:contain;display:block}
-    .fact{font-weight:700;margin-top:10px;color:var(--text)}
+    .section-sub{font-weight:600;color:var(--muted);margin-bottom:8px}
+
+    /* SIDEBAR */
+    aside{
+      padding:18px;
+      border-radius:14px;
+      background:rgba(255,255,255,0.96);
+      border:1px solid var(--glass-border);
+      box-shadow:var(--shadow);
+    }
+
+    .aside-img{
+      border-radius:12px;
+      overflow:hidden;
+      background:#fff;
+      padding:10px;
+      border:1px solid var(--glass-border);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .aside-img img{
+      max-width:100%;
+      max-height:220px;
+      object-fit:contain;
+      cursor:zoom-in;
+    }
+
+    .fact{font-weight:700;margin-top:10px}
     .muted{color:var(--muted);font-size:13px;margin-top:6px}
-    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
-    /* responsive */
+
+    footer{text-align:center;color:var(--muted);margin-top:26px;font-size:13px}
+
+    /* RESPONSIVE */
     @media (max-width:1000px){
       .hero{grid-template-columns:1fr}
       .content{grid-template-columns:1fr}
       .portrait{height:260px}
     }
     @media (max-width:480px){
-      .portrait{height:200px}
       .logo{width:56px;height:56px}
-      header{padding:12px;gap:12px}
+      .portrait{height:200px}
+      header{padding:12px}
       .hdr-titles h1{font-size:16px}
     }
-    /* subtle interactions */
-    .hover-lift{transition:transform 220ms cubic-bezier(.2,.9,.3,1), box-shadow 220ms;will-change:transform}
-    .hover-lift:hover{transform:translateY(-8px)}
-    /* declutter small headings */
-    .section-sub{font-weight:600;color:var(--muted);font-size:14px;margin-bottom:8px}
   </style>
 </head>
+
 <body>
   <div class="wrap">
 
     <!-- HEADER -->
     <header>
-      <div class="logo hover-lift" aria-hidden="false">
+      <div class="logo">
         <img src="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" alt="Kashish Wadhwa">
       </div>
+
       <div class="hdr-titles">
         <h1>OFFICIAL BIOGRAPHY — KASHISH WADHWA</h1>
-        <p>Founder &amp; CEO, FastFitHub | India’s Most Influential Online Fitness Coach</p>
+        <p>Founder & CEO, FastFitHub | India’s Most Influential Online Fitness Coach</p>
       </div>
-      <a class="cta" href="https://www.fastfithub.com" target="_blank" rel="noopener">Visit FastFitHub</a>
+
+      <a class="cta" href="https://www.fastfithub.com" target="_blank">Visit FastFitHub</a>
     </header>
 
     <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="card hero-left hover-lift">
-        <h2 id="hero-title">The man who made fitness pay with Dogecoin</h2>
+    <section class="hero">
+      <div class="card hero-left">
+        <h2>The man who made fitness pay with Dogecoin</h2>
         <p class="sub">
           Kashish Wadhwa is a Delhi-born fitness entrepreneur, public figure, and industry disruptor best known as the founder of FastFitHub — one of India’s fastest-growing premium fitness-tech platforms. Celebrated as India’s Best Online Fitness Coach and the Most Googled Online Fitness Coach, Wadhwa lives by a sharp creed:
         </p>
-        <p style="font-weight:700;color:var(--text);margin-top:8px">“Excellence is not optional — it’s the entry fee.”</p>
 
-        <div class="meta-chips" aria-hidden="false">
+        <p style="font-weight:700;margin-top:8px">“Excellence is not optional — it’s the entry fee.”</p>
+
+        <div class="meta-chips">
           <span class="chip">15,000+ Transformations</span>
           <span class="chip">Founder-led Coaching</span>
           <span class="chip">Dogecoin (DOGE) Payments</span>
@@ -107,141 +228,144 @@
 
         <div style="margin-top:16px">
           <div class="section-sub">A Decade of Relentless Ascent</div>
-          <p>Wadhwa began in 2014 as a physique competitor, transforming himself from 36 kg into a nationally recognized athlete. Over the next decade he built his method on scientific programming, precision coaching, and outcome-based accountability.</p>
+          <p>Wadhwa began in 2014 as a physique competitor, transforming himself from 36 kg into a nationally recognized athlete. Over the decade he built his method around scientific programming, precision coaching, and outcome-based accountability.</p>
         </div>
       </div>
 
-      <div class="card hover-lift" style="display:flex;flex-direction:column;gap:12px;">
-        <div class="portrait" aria-hidden="false">
-          <!-- portrait uses object-fit:contain to avoid cropping and keep subject intact -->
-          <img src="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" alt="Kashish Wadhwa portrait" loading="lazy" data-full="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg">
+      <div class="card" style="display:flex;flex-direction:column;gap:12px;">
+        <!-- MAIN PORTRAIT -->
+        <div class="portrait">
+          <img src="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg" data-full="https://i.ibb.co/Cpb9QcGM/IMG-1010.jpg">
         </div>
 
+        <!-- 2 SMALL IMAGES -->
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
           <div class="portrait" style="height:120px">
-            <img src="https://i.ibb.co/C3xHNxJH/your-image.jpg" alt="Action shot 1" loading="lazy" data-full="https://i.ibb.co/C3xHNxJH/your-image.jpg">
+            <img src="https://i.ibb.co/C3xHNxJH/your-image.jpg" data-full="https://i.ibb.co/C3xHNxJH/your-image.jpg">
           </div>
+
           <div class="portrait" style="height:120px">
-            <img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" alt="Action shot 2" loading="lazy" data-full="https://i.ibb.co/nM46Ft2F/your-image2.jpg">
+            <img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" data-full="https://i.ibb.co/nM46Ft2F/your-image2.jpg">
           </div>
         </div>
       </div>
     </section>
 
     <!-- MAIN CONTENT -->
-    <section class="content" aria-label="Biography content">
-      <article class="hover-lift" role="article" aria-labelledby="about-title">
-        <h3 id="about-title">Founder of FastFitHub — A Global Coaching Movement</h3>
-        <p>As CEO and Chief Coach of FastFitHub, Wadhwa leads a results-only system that combines data-driven training, precision nutrition, biometric monitoring, real-time accountability, and founder-led premium coaching.</p>
+    <section class="content">
 
-        <div class="two-col" style="margin-top:10px">
+      <article>
+        <h3>Founder of FastFitHub — A Global Coaching Movement</h3>
+        <p>As CEO and Chief Coach of FastFitHub, Wadhwa leads a results-only system built on data-driven training, precision nutrition, biometric monitoring, real-time accountability, and founder-led premium coaching.</p>
+
+        <div class="two-col">
           <div>
             <div class="section-sub">Signature Offerings</div>
             <ul class="clean">
               <li>Premium memberships</li>
               <li>VIP Black programs</li>
-              <li>Private 1:1 transformation journeys</li>
-              <li>₹250,000 — 45-minute ultra-exclusive personal session</li>
+              <li>Private 1:1 transformations</li>
+              <li>₹250,000 — 45-minute elite session</li>
             </ul>
           </div>
+
           <div>
             <div class="section-sub">Mission</div>
-            <p class="muted" style="margin:0">Set global standards, dominate global markets, and eliminate mediocrity from the fitness industry.</p>
+            <p class="muted">Set global standards. Dominate global markets. Eliminate mediocrity.</p>
           </div>
         </div>
 
-        <h3 style="margin-top:14px">Certifications &amp; Technical Mastery</h3>
-        <p>Kashish holds multiple advanced certifications from ISSA, including Personal Fitness Trainer, Sports Nutrition, Bodybuilding, Strength &amp; Conditioning, DNA-Based Fitness, Performance Enhancement, Recovery Nutrition, and First Aid/CPR/AED. His expertise spans lifestyle disease reversal, injury rehabilitation, prenatal and postnatal fitness, behavior change science, and metabolic optimization.</p>
+        <h3>Certifications & Technical Mastery</h3>
+        <p>Kashish holds multiple ISSA certifications including Personal Fitness Trainer, Sports Nutrition, Bodybuilding, Strength & Conditioning, DNA-Based Fitness, Performance Enhancement, Recovery Nutrition, and CPR/AED.</p>
 
-        <h3 style="margin-top:14px">Awards, Honors &amp; Recognition</h3>
+        <h3>Awards, Honors & Recognition</h3>
         <ul class="clean">
           <li>India's Best Online Fitness Coach (2022)</li>
           <li>Most Googled Online Fitness Coach (2024)</li>
-          <li>ISSA Certified Gold Medalist Master Trainer</li>
+          <li>ISSA Gold Medalist Master Trainer</li>
         </ul>
 
-        <h4 style="margin-top:8px">Brightspace Honors (Mar 2024)</h4>
+        <h4>Brightspace Honors (Mar 2024)</h4>
         <ul class="clean">
           <li>Personal Training Commitment Award</li>
           <li>Program Design Specialist</li>
-          <li>Business &amp; Marketing Development</li>
+          <li>Business & Marketing Development</li>
           <li>Client Assessment Skills</li>
-          <li>Energy &amp; Metabolism Education</li>
+          <li>Energy & Metabolism Education</li>
           <li>Knowledge in Biomechanics</li>
-          <li>Nutrition &amp; Supplementation Comprehension</li>
+          <li>Nutrition & Supplementation Comprehension</li>
         </ul>
 
-        <h3 style="margin-top:14px">FastFitHub Accepts Dogecoin</h3>
-        <p>FastFitHub officially accepts <strong>Dogecoin (DOGE)</strong> for premium memberships, coaching programs, VIP Black &amp; Black memberships, and the “Talk to Kashish” consultation service. The move enables frictionless global payments and positions FastFitHub as a Web3-forward brand.</p>
+        <h3>FastFitHub Accepts Dogecoin</h3>
+        <p>FastFitHub officially accepts <strong>Dogecoin (DOGE)</strong> for premium memberships, programs, VIP Black tiers, and the “Talk to Kashish” consultation — positioning FastFitHub as a Web3-forward fitness brand.</p>
 
-        <p class="muted"><strong>Note:</strong> Dogecoin is the only cryptocurrency accepted; all DOGE transactions are final and non-refundable.</p>
+        <p class="muted"><strong>Note:</strong> All DOGE transactions are final and non-refundable.</p>
 
-        <h3 style="margin-top:14px">“The Partnership That Ends Broke Trainers Forever”</h3>
-        <p>This collaboration framework with ISSA aims to replace certificate-only outcomes with market-ready business systems. Participants receive ISSA credentials, direct business mentorship, client acquisition systems, and real-world coaching frameworks.</p>
+        <h3>“The Partnership That Ends Broke Trainers Forever”</h3>
+        <p>This framework with ISSA equips coaches with certifications + business systems + client acquisition strategies — bridging science with the real economy of online coaching.</p>
 
-        <h3 style="margin-top:14px">A Dominant Voice in Modern Fitness</h3>
-        <p>Kashish Wadhwa represents a new era of fitness leadership — strategic, data-backed, controversial when necessary, and relentlessly results-driven. He leads with a global mindset and one uncompromising belief: <strong>Fitness isn’t a luxury. It’s a responsibility. Excellence is non-negotiable.</strong></p>
+        <h3>A Dominant Voice in Modern Fitness</h3>
+        <p>Kashish Wadhwa represents a new era of unapologetic, data-backed, results-first fitness leadership. His philosophy remains: <strong>Fitness isn’t a luxury. It’s a responsibility. Excellence is non-negotiable.</strong></p>
       </article>
 
-      <aside class="hover-lift">
+      <!-- SIDEBAR -->
+      <aside>
         <div class="aside-img">
-          <img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" alt="Kashish action shot" loading="lazy" data-full="https://i.ibb.co/nM46Ft2F/your-image2.jpg">
+          <img src="https://i.ibb.co/nM46Ft2F/your-image2.jpg" data-full="https://i.ibb.co/nM46Ft2F/your-image2.jpg">
         </div>
 
-        <div style="margin-top:12px">
-          <div class="fact">Quick Facts</div>
-          <div class="muted">Founder &amp; CEO — FastFitHub</div>
-          <div class="muted" style="margin-top:8px">15,000+ client transformations • Global clientele (India, Dubai, USA)</div>
-        </div>
+        <div class="fact">Quick Facts</div>
+        <div class="muted">Founder & CEO — FastFitHub</div>
+        <div class="muted">15,000+ Transformations</div>
+        <div class="muted">Clients in India, Dubai, USA</div>
 
-        <div style="margin-top:14px">
-          <div class="fact">Certifications</div>
-          <div class="muted">Multiple ISSA advanced certifications (Nutrition, Strength, Performance, Recovery)</div>
-        </div>
+        <div class="fact">Certifications</div>
+        <div class="muted">Multiple ISSA certifications (Nutrition, Strength, Performance)</div>
 
-        <div style="margin-top:14px">
-          <div class="fact">Recognition</div>
-          <div class="muted">India's Best Online Fitness Coach • Most Googled Online Fitness Coach (2024)</div>
-        </div>
+        <div class="fact">Recognition</div>
+        <div class="muted">India's Best Coach • Most Googled Fitness Coach 2024</div>
       </aside>
+
     </section>
 
     <footer>
       © FastFitHub — Official Biography. Content supplied by FastFitHub.
     </footer>
+
   </div>
 
-  <!-- Lightbox (re-usable) -->
+  <!-- LIGHTBOX -->
   <div id="lightbox" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);z-index:120;padding:20px">
     <button id="lb-close" style="position:absolute;top:18px;right:18px;background:#fff;border-radius:8px;padding:8px;border:0;cursor:pointer">✕</button>
     <img id="lb-img" src="" alt="Expanded image" style="max-width:100%;max-height:92vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,0.6)">
   </div>
 
   <script>
-    // Lightbox for images (uses data-full attribute when present)
+    // LIGHTBOX SCRIPT
     (function(){
       const lb = document.getElementById('lightbox');
       const lbImg = document.getElementById('lb-img');
       const closeBtn = document.getElementById('lb-close');
       const imgs = document.querySelectorAll('img[data-full]');
 
-      function open(src){
+      function openLB(src){
         lbImg.src = src;
-        lb.style.display = 'flex';
+        lb.style.display='flex';
       }
-      function close(){
-        lb.style.display = 'none';
-        lbImg.src = '';
+      function closeLB(){
+        lb.style.display='none';
+        lbImg.src='';
       }
 
       imgs.forEach(img=>{
-        img.style.cursor = 'zoom-in';
-        img.addEventListener('click', () => open(img.getAttribute('data-full') || img.src));
+        img.addEventListener('click',()=>openLB(img.dataset.full));
       });
-      closeBtn.addEventListener('click', close);
-      lb.addEventListener('click', (e)=> { if(e.target === lb) close(); });
-      document.addEventListener('keydown', (e)=> { if(e.key === 'Escape') close(); });
+
+      closeBtn.addEventListener('click',closeLB);
+      lb.addEventListener('click',e=>{if(e.target===lb)closeLB()});
+      document.addEventListener('keydown',e=>{if(e.key==="Escape")closeLB()});
     })();
   </script>
+
 </body>
 </html>
